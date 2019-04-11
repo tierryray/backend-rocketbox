@@ -13,7 +13,7 @@ routes.post('/boxes', BoxController.store);
 routes.get('/boxes/:id', BoxController.show);
 
 //  Teste
-routes.get('/', (req, res){
+routes.get('/', (req, res) => {
     res.send('Teste de Rota');
 });
 
