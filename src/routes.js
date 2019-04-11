@@ -12,11 +12,6 @@ const FileController = require('./controllers/FileController');
 routes.post('/boxes', BoxController.store);
 routes.get('/boxes/:id', BoxController.show);
 
-//  Teste
-routes.get('/', (req, res) => {
-    res.send('Teste de Rota');
-});
-
 routes.post(
     '/boxes/:id/files', 
     multer(multerConfig).single('file'), 
