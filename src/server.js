@@ -19,6 +19,7 @@ io.on("connection", socket => {
     }
 });
 
+//  MONGODB
 mongoose.connect(
     'mongodb+srv://omnistack:omnistack@cluster0-a6vdl.mongodb.net/omnistack?retryWrites=true', 
     {
