@@ -15,9 +15,9 @@ const io = require('socket.io')(server);
 
 //  Room pra cada box
 io.on("connection", socket => {
-    socket.on("connectRoom"), box => {
+    socket.on("connectRoom", box => {
         socket.join(box);
-    }
+    })
 });
 
 //  MONGODB
